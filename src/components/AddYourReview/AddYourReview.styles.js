@@ -1,8 +1,11 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import { GlobalButton, GlobalPostition } from '../../styles/GlobalStyles.styled';
-import { GoX } from 'react-icons/go';
-import { ImArrowLeft2 } from 'react-icons/im';
+import {
+  GlobalButton,
+  GlobalPostition,
+} from "../../styles/GlobalStyles.styled";
+import { GoX } from "react-icons/go";
+import { ImArrowLeft2 } from "react-icons/im";
 // import { MdAddAPhoto } from 'react-icons/md';
 
 export const ModalSection = styled.div`
@@ -11,7 +14,7 @@ export const ModalSection = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: ${p => p.theme.colors.blackLight};
+  background-color: ${(p) => p.theme.colors.blackLight};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,8 +23,8 @@ export const ModalSection = styled.div`
 
 export const ModalContent = styled.div`
   position: relative;
-  background-color: ${p => p.theme.colors.white};
-  border-radius: ${p => p.theme.space[2]};
+  background-color: ${(p) => p.theme.colors.white};
+  border-radius: ${(p) => p.theme.space[2]};
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -31,7 +34,7 @@ export const ModalContent = styled.div`
     width: 312px;
   }
   @media (min-width: 768px) {
-    width: 583px;
+    /* width: 583px; */
   }
 `;
 
@@ -42,8 +45,8 @@ export const Section = styled(GlobalPostition)`
     width: 312px;
     height: 498px;
     padding-top: 82px;
-    padding-right: 12px;
-    padding-left: 12px;
+    padding-right: 8px;
+    padding-left: 8px;
     padding-bottom: 40px;
   }
 
@@ -52,7 +55,7 @@ export const Section = styled(GlobalPostition)`
     padding-top: 82px;
     padding-right: 54px;
     padding-left: 54px;
-    padding-bottom: 72px;
+    padding-bottom: 52px;
   }
 `;
 
@@ -77,14 +80,14 @@ export const ModalBack = styled.button`
 `;
 
 export const Back = styled(ImArrowLeft2)`
-  fill: ${p => p.theme.colors.main};
+  fill: ${(p) => p.theme.colors.main};
 
   @media (min-width: 320px) and (max-width: 767px) {
-    font-size: ${p => p.theme.fontSizes.l};
+    font-size: ${(p) => p.theme.fontSizes.l};
   }
 
   @media (min-width: 768px) {
-    font-size: ${p => p.theme.fontSizes.xl};
+    font-size: ${(p) => p.theme.fontSizes.xl};
   }
 `;
 
@@ -109,14 +112,14 @@ export const ModalClosed = styled.button`
 `;
 
 export const Close = styled(GoX)`
-  fill: ${p => p.theme.colors.main};
+  fill: ${(p) => p.theme.colors.main};
 
   @media (min-width: 320px) and (max-width: 767px) {
-    font-size: ${p => p.theme.fontSizes.l};
+    font-size: ${(p) => p.theme.fontSizes.l};
   }
 
   @media (min-width: 768px) {
-    font-size: ${p => p.theme.fontSizes.xl};
+    font-size: ${(p) => p.theme.fontSizes.xl};
   }
 `;
 
@@ -128,12 +131,12 @@ export const Text = styled.p`
   margin-bottom: 40px;
 
   @media (min-width: 320px) and (max-width: 767px) {
-    font-size: ${p => p.theme.fontSizes.s};
+    font-size: ${(p) => p.theme.fontSizes.s};
     line-height: 21px;
   }
 
   @media (min-width: 768px) {
-    font-size: ${p => p.theme.fontSizes.l};
+    font-size: ${(p) => p.theme.fontSizes.l};
     line-height: 34px;
   }
 `;
@@ -157,7 +160,7 @@ export const Input = styled.input`
   background-color: rgba(99, 71, 137, 0.1);
   border: 1px solid #003031;
   border-radius: 8px;
-  width: 100%;
+  /* width: 100%; */
 
   @media (min-width: 320px) and (max-width: 767px) {
     height: 36px;
@@ -192,7 +195,7 @@ export const Message = styled.textarea`
   border: 1px solid #003031;
   background-color: rgba(99, 71, 137, 0.1);
   position: relative;
-  width: 100%;
+  /* width: 100%; */
   resize: none;
 
   @media (min-width: 320px) and (max-width: 767px) {
@@ -202,7 +205,7 @@ export const Message = styled.textarea`
   }
   @media (min-width: 768px) {
     height: 193px;
-    margin-bottom: 65px;
+    margin-bottom: 35px;
     padding-top: 13px;
     padding-left: 20px;
   }

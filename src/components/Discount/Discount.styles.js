@@ -1,9 +1,12 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import { GoX } from 'react-icons/go';
-import { ImArrowLeft2 } from 'react-icons/im';
+import { GoX } from "react-icons/go";
+import { ImArrowLeft2 } from "react-icons/im";
 
-import { GlobalPostition, GlobalButton } from '../../styles/GlobalStyles.styled';
+import {
+  GlobalPostition,
+  GlobalButton,
+} from "../../styles/GlobalStyles.styled";
 
 export const ModalSection = styled.div`
   position: fixed;
@@ -11,7 +14,7 @@ export const ModalSection = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: ${p => p.theme.colors.blackLight};
+  background-color: ${(p) => p.theme.colors.blackLight};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,8 +23,8 @@ export const ModalSection = styled.div`
 
 export const ModalContent = styled.div`
   position: relative;
-  background-color: ${p => p.theme.colors.white};
-  border-radius: ${p => p.theme.space[2]};
+  background-color: ${(p) => p.theme.colors.white};
+  border-radius: ${(p) => p.theme.space[2]};
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -37,7 +40,7 @@ export const ModalContent = styled.div`
 
 export const Section = styled(GlobalPostition)`
   border-radius: 8px;
-  background-color: ${p => p.theme.colors.accent};
+  background-color: ${(p) => p.theme.colors.accent};
 
   @media (min-width: 320px) and (max-width: 767px) {
     // width: 312px;
@@ -50,7 +53,7 @@ export const Section = styled(GlobalPostition)`
   }
 
   @media (min-width: 768px) {
-    width: 660px;
+    /* width: 660px; */
     padding-top: 110px;
     padding-right: 54px;
     padding-left: 54px;
@@ -73,15 +76,15 @@ export const Text = styled.p`
   color: #003031;
   text-align: center;
   margin-bottom: 40px;
-  color: ${p => p.theme.colors.white};
+  color: ${(p) => p.theme.colors.white};
 
   @media (min-width: 320px) and (max-width: 767px) {
-    font-size: ${p => p.theme.fontSizes.s};
+    font-size: ${(p) => p.theme.fontSizes.s};
     line-height: 21px;
   }
 
   @media (min-width: 768px) {
-    font-size: ${p => p.theme.fontSizes.m};
+    font-size: ${(p) => p.theme.fontSizes.m};
     line-height: 29px;
   }
 `;
@@ -89,7 +92,7 @@ export const Text = styled.p`
 export const TextUp = styled.p`
   font-style: normal;
   font-weight: 400;
-  color: ${p => p.theme.colors.background};
+  color: ${(p) => p.theme.colors.background};
   /* text-transform: uppercase; */
   text-align: center;
 
@@ -133,14 +136,14 @@ export const ModalBack = styled.button`
 `;
 
 export const Back = styled(ImArrowLeft2)`
-  fill: ${p => p.theme.colors.white};
+  fill: ${(p) => p.theme.colors.white};
 
   @media (min-width: 320px) and (max-width: 767px) {
-    font-size: ${p => p.theme.fontSizes.l};
+    font-size: ${(p) => p.theme.fontSizes.l};
   }
 
   @media (min-width: 768px) {
-    font-size: ${p => p.theme.fontSizes.xl};
+    font-size: ${(p) => p.theme.fontSizes.xl};
   }
 `;
 
@@ -165,14 +168,14 @@ export const ModalClosed = styled.button`
 `;
 
 export const Close = styled(GoX)`
-  fill: ${p => p.theme.colors.white};
+  fill: ${(p) => p.theme.colors.white};
 
   @media (min-width: 320px) and (max-width: 767px) {
-    font-size: ${p => p.theme.fontSizes.l};
+    font-size: ${(p) => p.theme.fontSizes.l};
   }
 
   @media (min-width: 768px) {
-    font-size: ${p => p.theme.fontSizes.xl};
+    font-size: ${(p) => p.theme.fontSizes.xl};
   }
 `;
 
@@ -188,6 +191,6 @@ export const BoxBtn = styled.div`
 `;
 
 export const Btn = styled(GlobalButton)`
-  color: ${p => p.theme.colors.accent};
-  background-color: ${p => p.theme.colors.white};
+  color: ${(p) => p.theme.colors.accent};
+  background-color: ${(p) => p.theme.colors.white};
 `;
